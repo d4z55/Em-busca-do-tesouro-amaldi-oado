@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <title>Em busca da cidade perdida</title>
+</head>
+<body>
+    <main>
+       <!-- Caminho inicial -->
+       <div class="passo ativo" id="passo-0">
+        <p>Você está caminhando tranquilamente pelo movimentado vilarejo de Eldoria, cercado por comerciantes vendendo suas mercadorias e crianças brincando nas ruas. Um cavaleiro misterioso sai apressado de uma taverna, parecendo ansioso. Algo cai de sua capa brilhante, chamando sua atenção. Ao se aproximar, você percebe que é um mapa antigo, marcado com um “X” em uma ilha remota.</p>
+        <p>O cavaleiro olha ao redor, mas parece não perceber que deixou o mapa para trás. Você tem duas opções:</p>
+        <button class="btn-proximo" data-proximo="1">Seguir o cavaleiro para tentar descobrir mais sobre o tesouro.</button>
+        <button class="btn-proximo" data-proximo="2">Guardar o mapa e partir imediatamente em busca do tesouro.</button>
+    </div>
+
+    <!-- Caminho 1 -->
+    <div class="passo" id="passo-1">
+        <p>Curioso, você decide seguir o cavaleiro à distância. Ele entra em um mercado movimentado, onde conversa com um mercador. Você consegue ouvir partes da conversa, mencionando uma "chave" e "prova de lealdade". O cavaleiro parece desconfiado e rapidamente segue em direção ao porto.</p>
+        <p>Você precisa tomar uma decisão:</p>
+        <button class="btn-proximo" data-proximo="3">Continuar seguindo o cavaleiro até o porto.</button>
+        <button class="btn-proximo" data-proximo="4">Confrontá-lo diretamente e perguntar sobre o mapa.</button>
+    </div>
+
+    <!-- Caminho 2 -->
+    <div class="passo" id="passo-2">
+        <p>Decidido a não perder tempo, você guarda o mapa e contrata um barco no porto. A jornada pelo mar é perigosa, com tempestades e ondas traiçoeiras. Você finalmente avista a ilha misteriosa, coberta por densas florestas e cercada por penhascos.</p>
+        <p>Na ilha, você percebe que não está sozinho. Há sinais de atividade humana recente, mas o mapa não é claro sobre o caminho até o tesouro. Você precisa decidir:</p>
+        <button class="btn-proximo" data-proximo="5">Explorar a ilha sozinho, confiando apenas no mapa.</button>
+        <button class="btn-proximo" data-proximo="6">Tentar encontrar aliados entre os habitantes locais para ajudar na busca.</button>
+    </div>
+
+    <!-- Finais -->
+    <div class="passo" id="passo-3">
+        <p>Você e o cavaleiro se aliam e enfrentam juntos os desafios de um templo antigo. Após resolver enigmas e evitar armadilhas, vocês encontram o tesouro. Surpreendentemente, ele decide dividir o ouro igualmente, e vocês partem como amigos.</p>
+        <img src="https://conteudo.imguol.com.br/c/noticias/f6/2017/06/22/arca-do-tesouro-caca-ao-tesouro-bau-com-tesouro-ouro-indoor-joias-ilustrativa-1498142299380_450x450.jpg" alt="Amizade e Tesouro">
+    </div>
+    <div class="passo" id="passo-4">
+        <p>Ao tentar enganar o cavaleiro, você aciona uma armadilha mágica dentro do templo. Uma maldição prende você no local, enquanto o cavaleiro foge com o tesouro, deixando você para trás.</p>
+        <img src="https://d30rpg.com.br/wp-content/uploads/2019/07/armadilha2.jpg" alt="Armadilha Mágica">
+    </div>
+    <div class="passo" id="passo-5">
+        <p>Você decide explorar a ilha sozinho. Apesar de enfrentar muitos perigos, como criaturas selvagens e terrenos traiçoeiros, você encontra o tesouro. Mas ao abrir o baú, uma maldição é liberada, trazendo desgraça à sua vida para sempre.</p>
+        <img src="data:image/jpeg;base64,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" alt="Tesouro Amaldiçoado">
+    </div>
+    <div class="passo" id="passo-6">
+        <p>Você encontra os habitantes locais e forma uma aliança. Eles guiam você até o tesouro, mas o líder da tribo trai você, ficando com o ouro e deixando você perdido na ilha.</p>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFkyNwWeOF5Y4yteNGlxjBngHG_xrzcKRaN7Y596gAYxEN0hk6RdFwePRI8b8XWmvTj9U&usqp=CAU" alt="Traição na Ilha">
+    </div>
+</main>
+
+<script>
+    // Interatividade com JavaScript
+    document.querySelectorAll('.btn-proximo').forEach(botao => {
+        botao.addEventListener('click', () => {
+            const idProximo = botao.getAttribute('data-proximo');
+            document.querySelectorAll('.passo').forEach(passo => passo.classList.remove('ativo'));
+            document.getElementById(`passo-${idProximo}`).classList.add('ativo');
+        });
+    });
+</script>
+</body>
+</html>
